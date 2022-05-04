@@ -10,7 +10,7 @@ const InputSearch = () => {
   return (
     <div className="input_container">
       <label className="input_label">Cherchez votre cocktail préféré !</label>
-      <Input className="input_search" placeholder="dkeufhuehfjejf"></Input>
+      <Input className="input_search" placeholder=""></Input>
     </div>
   );
 };
