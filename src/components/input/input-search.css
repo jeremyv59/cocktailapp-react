@@ -1,0 +1,29 @@
+.input_container {
+  background: var(--color-secondary);
+  margin-top: 2.5rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.2rem 2rem;
+  border: 1px solid var(--color-text);
+  border-radius: 0.3rem;
+  transition: var(--transition);
+}
+
+.input_container:hover {
+  background: transparent;
+}
+
+.input_label {
+  color: var(--color-text);
+  font-size: 1.1rem;
+}
+
+.input_search {
+  background: var(--color-white);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  color: var(--color-text);
+}
