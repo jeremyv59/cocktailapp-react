@@ -8,6 +8,7 @@ const InputSearch = () => {
 
   const onSearch = (e) => {
     context.setSearchValue(e.target.value);
+    console.log("SEARCH", e.target.value);
   };
   console.log("ctx", context.searchValue);
 

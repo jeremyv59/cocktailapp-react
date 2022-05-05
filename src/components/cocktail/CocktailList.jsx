@@ -7,12 +7,11 @@ import { Spin, Space } from "antd";
 const CocktailList = () => {
   const context = useContext(AppContext);
 
-  console.log("context list", context);
   return (
     <React.Fragment>
       <ul className="container_drink_list">
         {!context.loading
-          ? context.cocktails.drinks.map((drink) => {
+          ? context.cocktailsFiltered.drinks.map((drink) => {
               return (
                 <CocktailCard
                   key={drink.idDrink}

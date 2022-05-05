@@ -10,6 +10,7 @@ const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 
 function App() {
   const [cocktails, setCocktails] = useState();
+  const [cocktailsFiltered, setFilteredCocktails] = useState();
   const [loading, setLoading] = useState(true);
   const [searchValue, setSearchValue] = useState();
 
@@ -17,8 +18,10 @@ function App() {
     try {
       const response = await axios.get(url);
       setCocktails(response.data);
+      setFilteredCocktails(response.data);
     } catch (err) {
       setCocktails(null);
+      setFilteredCocktails(null);
     } finally {
       setLoading(false);
     }
@@ -35,10 +38,11 @@ function App() {
       drink.strDrink.toLowerCase().includes(searchValue.toLowerCase())
     );
 
-    setCocktails(finalArray);
+    setFilteredCocktails(finalArray);
   };
 
   useEffect(() => {
+    console.log("UEF");
     getCocktails();
   }, []);
 
@@ -50,10 +54,9 @@ function App() {
     <React.Fragment>
       <AppContext.Provider
         value={{
-          cocktails,
-          setCocktails,
+          cocktailsFiltered,
           loading,
-          searchValue,
+          // searchValue,
           setSearchValue,
         }}
       >
