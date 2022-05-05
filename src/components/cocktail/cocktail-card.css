@@ -30,9 +30,15 @@
 }
 
 .details_btn {
-  padding: 0.4rem 0.5rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 0.3rem;
   margin-bottom: 0.6rem;
   background: var(--color-secondary);
   color: var(--color-text);
+  transition: var(--transition);
+  font-size: 0.8rem;
+}
+
+.details_btn:hover {
+  background: var(--color-white);
 }

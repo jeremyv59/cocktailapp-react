@@ -7,6 +7,7 @@ import { Spin, Space } from "antd";
 const CocktailList = () => {
   const context = useContext(AppContext);
 
+  console.log("context list", context);
   return (
     <React.Fragment>
       <ul className="container_drink_list">

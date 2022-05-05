@@ -11,6 +11,7 @@ const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 function App() {
   const [cocktails, setCocktails] = useState();
   const [loading, setLoading] = useState(true);
+  const [searchValue, setSearchValue] = useState();
 
   const getCocktails = async () => {
     try {
@@ -23,16 +24,37 @@ function App() {
     }
   };
 
+  const getFilteredCocktails = async () => {
+    let finalArray = {
+      drinks: [],
+    };
+
+    console.log("value search", searchValue);
+
+    finalArray.drinks = cocktails.drinks.filter((drink) =>
+      drink.strDrink.toLowerCase().includes(searchValue.toLowerCase())
+    );
+
+    setCocktails(finalArray);
+  };
+
   useEffect(() => {
     getCocktails();
   }, []);
+
+  useEffect(() => {
+    getFilteredCocktails();
+  }, [searchValue]);
 
   return (
     <React.Fragment>
       <AppContext.Provider
         value={{
           cocktails,
+          setCocktails,
           loading,
+          searchValue,
+          setSearchValue,
         }}
       >
         <BrowserRouter>
