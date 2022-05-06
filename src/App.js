@@ -32,8 +32,6 @@ function App() {
       drinks: [],
     };
 
-    console.log("value search", searchValue);
-
     finalArray.drinks = cocktails.drinks.filter((drink) =>
       drink.strDrink.toLowerCase().includes(searchValue.toLowerCase())
     );
@@ -42,7 +40,6 @@ function App() {
   };
 
   useEffect(() => {
-    console.log("UEF");
     getCocktails();
   }, []);
 
@@ -56,7 +53,6 @@ function App() {
         value={{
           cocktailsFiltered,
           loading,
-          // searchValue,
           setSearchValue,
         }}
       >
@@ -64,6 +60,7 @@ function App() {
           <Header></Header>
           <Routes>
             <Route path="/" element={<Homepage></Homepage>}></Route>
+            <Route path="/cocktail/:id"></Route>
             <Route path="/about" element={<About></About>}></Route>
           </Routes>
         </BrowserRouter>

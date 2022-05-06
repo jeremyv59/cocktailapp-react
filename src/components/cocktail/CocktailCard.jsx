@@ -1,12 +1,14 @@
 import React from "react";
 import "../cocktail/cocktail-card.css";
 import { Card, Avatar, Button } from "antd";
+import { Link } from "react-router-dom";
 
 const CocktailCard = ({
   cocktailName,
   cocktailGlass,
   cocktailImage,
   alcohol,
+  id,
 }) => {
   return (
     <Card className="card_item">
@@ -18,7 +20,9 @@ const CocktailCard = ({
           {alcohol === "Alcoholic" ? "Alcolisé" : "Non Alcolisé"}
         </small>
         <br />
-        <Button className="details_btn">Details</Button>
+        <Button className="details_btn">
+          <Link to={`/cocktail/`}>Details</Link>
+        </Button>
       </div>
     </Card>
   );
