@@ -15,6 +15,7 @@ const CocktailList = () => {
               return (
                 <CocktailCard
                   key={drink.idDrink}
+                  id={drink.idDrink}
                   cocktailName={drink.strDrink}
                   cocktailImage={drink.strDrinkThumb}
                   cocktailGlass={drink.strGlass}
