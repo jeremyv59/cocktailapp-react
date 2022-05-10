@@ -89,7 +89,6 @@ const CocktailDetailsPage = () => {
             ></CocktailDetailItem>
             <CocktailDetailItem
               itemName="Ingrédients"
-              // value={cocktailDetails.drinks[0].strGlass}
               value={getIngredientsToDisplay(cocktailDetails.drinks[0])}
             ></CocktailDetailItem>
           </div>

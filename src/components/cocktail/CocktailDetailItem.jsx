@@ -5,7 +5,7 @@ const CocktailDetailItem = ({ itemName, value }) => {
   return (
     <div className="container_detail_item">
       <p className="item_name">{`${itemName} :`}</p>
-      <p>{value}</p>
+      <p className="item_value">{value}</p>
     </div>
   );
 };
