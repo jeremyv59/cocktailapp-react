@@ -5,6 +5,7 @@ import { AppContext } from "./context/AppContext";
 import About from "./pages/About";
 import Homepage from "./pages/Homepage";
 import axios from "axios";
+import CocktailDetailsPage from "./components/cocktail/CocktailDetailsPage";
 
 const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 
@@ -60,7 +61,10 @@ function App() {
           <Header></Header>
           <Routes>
             <Route path="/" element={<Homepage></Homepage>}></Route>
-            <Route path="/cocktail/:id"></Route>
+            <Route
+              path="/cocktail/:id"
+              element={<CocktailDetailsPage></CocktailDetailsPage>}
+            ></Route>
             <Route path="/about" element={<About></About>}></Route>
           </Routes>
         </BrowserRouter>

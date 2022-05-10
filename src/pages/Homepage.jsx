@@ -7,8 +7,8 @@ const Homepage = () => {
   return (
     <div className="container container_homepage">
       <InputSearch></InputSearch>
+      <h2 className="list_title">Cocktails</h2>
       <CocktailList></CocktailList>
-      {/* <h2>Cocktails</h2> */}
     </div>
   );
 };

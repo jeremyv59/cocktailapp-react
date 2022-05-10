@@ -21,7 +21,7 @@ const CocktailCard = ({
         </small>
         <br />
         <Button className="details_btn">
-          <Link to={`/cocktail/`}>Details</Link>
+          <Link to={`/cocktail/${id}`}>Details</Link>
         </Button>
       </div>
     </Card>

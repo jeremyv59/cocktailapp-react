@@ -9,3 +9,8 @@
   height: 100px;
   background: red;
 }
+
+.list_title {
+  color: var(--color-text);
+  margin-top: 1.8rem;
+}
