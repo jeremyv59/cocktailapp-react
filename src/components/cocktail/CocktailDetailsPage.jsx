@@ -49,7 +49,7 @@ const CocktailDetailsPage = () => {
         <ArrowLeftOutlined></ArrowLeftOutlined>
         Retour à l'accueil
       </button>
-      <h2 className="cocktail_name">
+      <h2 className="drink_name">
         {!loading ? cocktailDetails.drinks[0].strDrink : null}
       </h2>
       {!loading ? (

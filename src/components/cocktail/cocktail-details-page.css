@@ -13,9 +13,10 @@
   max-width: 200px;
 }
 
-.cocktail_name {
+.drink_name {
   text-align: center;
-  margin-top: 1.5rem;
+  color: var(--color-text);
+  margin-top: 1.2rem;
 }
 
 .container_content {
