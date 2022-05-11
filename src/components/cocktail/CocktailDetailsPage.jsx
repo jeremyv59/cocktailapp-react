@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 import "../cocktail/cocktail-details-page.css";
 import { ArrowLeftOutlined } from "@ant-design/icons";
@@ -45,10 +45,15 @@ const CocktailDetailsPage = () => {
 
   return (
     <div className="container container_details">
-      <button className="back_button">
-        <ArrowLeftOutlined></ArrowLeftOutlined>
-        Retour à l'accueil
-      </button>
+      <div className="btn_container">
+        <Link to="/">
+          <button className="back_button">
+            <ArrowLeftOutlined className="arrow_icon"></ArrowLeftOutlined>
+            <p className="back_text">Retour à l'accueil</p>
+          </button>
+        </Link>
+      </div>
+
       <h2 className="drink_name">
         {!loading ? cocktailDetails.drinks[0].strDrink : null}
       </h2>
@@ -62,7 +67,6 @@ const CocktailDetailsPage = () => {
             ></img>
           </div>
           <div className="content_desc">
-            {console.log("cockt", cocktailDetails)}
             <CocktailDetailItem
               itemName="Nom"
               value={cocktailDetails.drinks[0].strDrink}
