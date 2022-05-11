@@ -7,12 +7,15 @@
 .item_name {
   background: var(--color-secondary);
   border-radius: 0.2rem;
-  padding: 0.2rem 0.6rem;
+  padding: 0.1rem;
   color: var(--color-text);
   max-lines: 1;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .item_value {
   color: var(--color-text);
   font-size: 0.9rem;
+  max-lines: 1;
 }

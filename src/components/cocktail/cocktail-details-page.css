@@ -44,5 +44,17 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 1rem;
-  gap : 0.6rem;
+  gap: 0.6rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container_content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container_content {
+    grid-template-columns: 1fr;
+  }
 }

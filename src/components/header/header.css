@@ -7,16 +7,21 @@ header {
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
+.container_nav {
+  width: var(--container-width-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .app_title {
   color: var(--color-text);
-  width: 12%;
 }
 
 .container_links {
   display: flex;
   justify-content: flex-end;
   gap: 1.5rem;
-  width: 60%;
 }
 
 .link_item {
@@ -28,4 +33,16 @@ header {
 
 .link_item:hover {
   color: var(--color-white);
+}
+
+@media screen and (max-width: 1024px) {
+  .container_nav {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container_nav {
+    width: var(--container-width-sm);
+  }
 }

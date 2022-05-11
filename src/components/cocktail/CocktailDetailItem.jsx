@@ -5,7 +5,9 @@ const CocktailDetailItem = ({ itemName, value }) => {
   return (
     <div className="container_detail_item">
       <p className="item_name">{`${itemName} :`}</p>
-      <p className="item_value">{value}</p>
+      <p className="item_value">
+        {value.length > 70 ? value.substring(0, 70) + "..." : value}
+      </p>
     </div>
   );
 };
