@@ -39,16 +39,16 @@ header {
   .container_nav {
     width: var(--container-width-md);
   }
-  .app_title {
-    font-size: 1.2rem;
-  }
-  .link_item {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 600px) {
   .container_nav {
     width: var(--container-width-sm);
+  }
+  .app_title {
+    font-size: 1.2rem;
+  }
+  .link_item {
+    font-size: 1rem;
   }
 }
