@@ -1,0 +1,30 @@
+.about_container {
+  text-align: center;
+}
+
+.contact_title {
+  color: var(--color-text);
+  margin: 2rem 0rem;
+}
+
+.contact_item {
+  color: var(--color-text);
+}
+
+.socials_container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social_item {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  transition: var(--transition);
+}
+
+.social_item:hover {
+  color: var(--color-white);
+}
