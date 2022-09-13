@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/header/Header";
 import { AppContext } from "./context/AppContext";
 import About from "./pages/About";
@@ -57,7 +57,7 @@ function App() {
           setSearchValue,
         }}
       >
-        <BrowserRouter>
+        <HashRouter>
           <Header></Header>
           <Routes>
             <Route path="/" element={<Homepage></Homepage>}></Route>
@@ -67,7 +67,7 @@ function App() {
             ></Route>
             <Route path="/about" element={<About></About>}></Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </AppContext.Provider>
     </React.Fragment>
   );
