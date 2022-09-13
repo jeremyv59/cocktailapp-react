@@ -57,7 +57,7 @@ function App() {
           setSearchValue,
         }}
       >
-        <HashRouter>
+        <HashRouter basename="/">
           <Header></Header>
           <Routes>
             <Route path="/" element={<Homepage></Homepage>}></Route>
