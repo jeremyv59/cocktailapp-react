@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cocktailapp-react/static/css/main.bedc14b7.css",
-    "main.js": "/cocktailapp-react/static/js/main.16a92642.js",
+    "main.js": "/cocktailapp-react/static/js/main.95f70d46.js",
     "index.html": "/cocktailapp-react/index.html",
     "main.bedc14b7.css.map": "/cocktailapp-react/static/css/main.bedc14b7.css.map",
-    "main.16a92642.js.map": "/cocktailapp-react/static/js/main.16a92642.js.map"
+    "main.95f70d46.js.map": "/cocktailapp-react/static/js/main.95f70d46.js.map"
   },
   "entrypoints": [
     "static/css/main.bedc14b7.css",
-    "static/js/main.16a92642.js"
+    "static/js/main.95f70d46.js"
   ]
 }
